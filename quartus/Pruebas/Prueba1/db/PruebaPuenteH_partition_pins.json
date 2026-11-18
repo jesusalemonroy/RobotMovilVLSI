@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PIN_12EN",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_1A",
+					"strict" : false
+				},
+				{
+					"name" : "LED_1A",
+					"strict" : false
+				},
+				{
+					"name" : "LED_2A",
+					"strict" : false
+				},
+				{
+					"name" : "LED_SENSOR",
+					"strict" : false
+				},
+				{
+					"name" : "SW_ENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "SENSOR_LUZ",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

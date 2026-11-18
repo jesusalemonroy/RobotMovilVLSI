@@ -1,0 +1,17 @@
+# Quartus generated files
+quartus/db/
+quartus/incremental_db/
+quartus/output_files/
+quartus/*.qws
+quartus/*.rpt
+quartus/*.summary
+quartus/*.sof
+quartus/*.pof
+quartus/*.jic
+quartus/*.sld
+quartus/*.pin
+quartus/*.qdf
+
+# editor / OS
+.DS_Store
+Thumbs.db

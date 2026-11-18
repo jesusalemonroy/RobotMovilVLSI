@@ -1,0 +1,35 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity PruebaPuenteH is
+    Port (
+        -- Entradas desde los switches de la DE10-Lite
+        SW_1A    : in  STD_LOGIC;  -- Switch para controlar sentido A
+        SW_2A    : in  STD_LOGIC;  -- Switch para controlar sentido B
+        
+        -- Salidas físicas hacia el puente H L293D (Headers GPIO)
+        PIN_12EN : out STD_LOGIC;  -- Pin 1 del L293D (Habilitación)
+        PIN_1A   : out STD_LOGIC;  -- Pin 2 del L293D (Entrada 1A)
+        PIN_2A   : out STD_LOGIC;  -- Pin 7 del L293D (Entrada 2A)
+        
+        -- Salidas de diagnóstico hacia los LEDs de la DE10-Lite
+        LED_1A   : out STD_LOGIC;
+        LED_2A   : out STD_LOGIC;
+        LED_EN   : out STD_LOGIC
+    );
+end PruebaPuenteH;
+
+architecture Behavioral of PruebaPuenteH is
+begin
+    -- Mantenemos el puente H siempre habilitado (3.3V = '1' lógico válido para L293D)
+    PIN_12EN <= '1';
+    
+    -- Asignación directa de los switches a las entradas del L293D
+    PIN_1A   <= SW_1A;
+    PIN_2A   <= SW_2A;
+    
+    -- Espejo visual en los LEDs de la tarjeta
+    LED_1A   <= SW_1A;
+    LED_2A   <= SW_2A;
+    LED_EN   <= '1';
+end Behavioral;
