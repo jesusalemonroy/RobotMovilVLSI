@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "US_TRIG",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_12EN",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_1A",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_34EN",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_3A",
+					"strict" : false
+				},
+				{
+					"name" : "PIN_4A",
+					"strict" : false
+				},
+				{
+					"name" : "LED_LUZ",
+					"strict" : false
+				},
+				{
+					"name" : "LED_OBS",
+					"strict" : false
+				},
+				{
+					"name" : "LED_GIRO",
+					"strict" : false
+				},
+				{
+					"name" : "SENSOR_LUZ",
+					"strict" : false
+				},
+				{
+					"name" : "SW_ENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_50M",
+					"strict" : false
+				},
+				{
+					"name" : "US_ECHO",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
